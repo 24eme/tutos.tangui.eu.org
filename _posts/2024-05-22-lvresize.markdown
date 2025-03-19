@@ -1,0 +1,22 @@
+---
+title: Augmenter la taille d'une partition lvm
+date:  2024-05-22 15:45
+layout: post
+---
+
+Trouver la partition à augmenter :
+
+```
+df -h
+
+/dev/mapper/lv-vg-tmp    4,6G    177M  4,1G   5% /tmp
+/dev/mapper/lv-vg-tmp-home   121G     96G   20G  83% /home
+```
+
+Augmenter la taille de la partition :
+
+```
+lvresize --resizefs --size +5G /dev/mapper/lv-vg-tmp-home
+```
+
+Source : https://doc.ubuntu-fr.org/lvm#volume_logique2
