@@ -1,6 +1,6 @@
 ---
 title: "Tester une configuration SSL de OpenLDAP - Debian"
-date:  2025-03-19 12:15
+date:  2025-03-18 12:15
 layout: post
 ---
 
